@@ -19,7 +19,7 @@ col1, col2 = st.columns(2)
 # Sliders with independent states
 with col1:
     weekend_multiplier = st.slider(
-        "Weekend Multiplier", 1.0, 2.0, get_param("weekend_multiplier", 1.2), 0.05
+        "Weekend Multiplier", 1.0, 2.0, get_param("weekend_multiplier", 1.0), 0.05
     )
     production_cost_percentage = st.slider(
         "Production Material Cost Percentage", 0.2, 0.6, get_param("production_cost", 0.3), 0.01
